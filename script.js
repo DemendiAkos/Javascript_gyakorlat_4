@@ -15,8 +15,6 @@ function count1() {
         window.alert("Az érték nem lehet negatív");
         input1.value = 0;
         input2.value = 0;
-        end = 0;
-        output.innerHTML = ("Összesen: 0 pont")
     } else {
         num1 = 10*(input1.value);
         end = num1 + num2;
@@ -28,13 +26,9 @@ function count2 () {
     if (input2.value < 0) {
         window.alert("Az érték nem lehet negatív");
         input2.value = 0;
-        end = 0;
-        output.innerHTML = ("Összesen: 0 pont")
     } else if (input2.value > 1) {
         window.alert("Az aranycikeszt csak egyszer lehet elkapni")
-        input2.value = 0;
-        end = 0;
-        output.innerHTML = ("Összesen: 0 pont")
+        input2.value = 1;
     } else {
         num2 = 150*(input2.value);
         end = num1 + num2;
